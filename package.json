@@ -1,0 +1,25 @@
+{
+  "name": "sports-nosql-lab2",
+  "version": "1.0.0",
+  "description": "Лабораторна робота №2: NoSQL (MongoDB + Redis) та порівняння швидкодії з PostgreSQL",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "seed": "tsx src/seed.ts",
+    "mongo": "tsx src/mongoDemo.ts",
+    "bench": "tsx src/benchmark.ts",
+    "redis": "tsx src/redisDemo.ts"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "mongodb": "^6.9.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
